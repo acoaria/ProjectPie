@@ -18,13 +18,12 @@ class nameconv
 
     for(i=0;i<name.length();i++)
     {
-      //System.out.println(edit);
       char ch = edit.charAt(i);
       tmp=(int)ch;
       tmp=tmp-96;
       if((tmp>=10)&&(tmp<=26))
       {
-        //con[ptr]=(int)edit[i].charValue();
+
         con[ptr] = tmp/10;
         con[ptr+1] = tmp%10;
         ptr+=2;
